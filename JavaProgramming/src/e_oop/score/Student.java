@@ -18,7 +18,7 @@ public class Student {
 	int stsum= kor + eng + math;
 	double stavg = Math.round(stsum/3.0*100)/100.0;
 	
-	
+
 	
 	
 	
