@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 public class Park {
-
+//파일하나에 public이 붙은 클래스는 하나여야함.
 
 		//기능: 시동, 주행, 주차
 		
@@ -23,9 +23,9 @@ public class Park {
 		final int MAX_DRIV=100;
 		
 		
-		//생성자, 온도와 풍량 값을 받아 저장함
 		Park(int driv){
-			this.driv = driv;
+			this.driv = driv; //외부에서 값을 받아와야할때 쓴다
+			
 		}
 		
 		//오버로딩
