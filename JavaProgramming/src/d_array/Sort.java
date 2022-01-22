@@ -7,7 +7,7 @@ public class Sort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		/*
+		/* 
 		 * - 석차구하기: 점수를 비교해 작은 점수의 등수를 증가시키는 방식 (for안의 for, 석차를 저장할 변수만들기)
 		 * - 선택정렬: 가장작은 숫자를 찾아서 앞으로 보내는 방식 
 		 * - 버블정렬: 바로뒤의 숫자와 비교해서 큰수를 뒤로 보내는 방식
