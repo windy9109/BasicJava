@@ -12,7 +12,7 @@ public class Quiz2 {
 		}
 		System.out.println(Arrays.toString(arr));
 		
-		/*
+		/* 
 		 * 1~5사이의 랜덤한 값이 10개 저장된 배열에서 중복된 값이 제거된 배열을 만드시오.
 		 * [3, 1, 2, 1, 3, 5, 1, 3, 4, 2]
 		 * [3, 1, 2, 5, 4]
