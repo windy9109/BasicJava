@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Alba {
 
-	//주문받는 메서드
+	//주문받는 메서드 
 	//주문받기 위해 필요한것? 없음
 	//주문받은 후 보스에게 줄 것? return 주문서
 	
