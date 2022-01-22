@@ -6,7 +6,7 @@ public class Array {
 
 	public static void main(String[] args) {
 		/*
-		 * 배열
+		 * 배열 
 		 * - 여러개의 값을 하나의 변수에 저장해서 사용하는 것이다.
 		 * - 참조형 타입이다.
 		 * - 인덱스로 값을 구분한다.
