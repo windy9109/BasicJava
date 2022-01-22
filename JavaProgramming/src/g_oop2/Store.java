@@ -5,12 +5,12 @@ public class Store {
 	public static void main(String[] args) {
 		
 		
-		Desktop d1 = new Desktop("삼성 컴퓨터", 100000);
-		Desktop d2 = new Desktop("LG 컴퓨터", 100000);
-		AirCon ac1 = new AirCon("삼성 에어컨", 200000);
-		AirCon ac2 = new AirCon("LG 에어컨", 250000);
-		TV tv1 = new TV("삼성 tv", 300000);
-		TV tv2 = new TV("LG tv", 350000);
+		Desktop d1 = new Desktop("삼성컴퓨터", 100000);
+		Desktop d2 = new Desktop("LG컴퓨터", 100000);
+		AirCon ac1 = new AirCon("삼성에어컨", 200000);
+		AirCon ac2 = new AirCon("LG에어컨", 250000);
+		TV tv1 = new TV("삼성tv", 300000);
+		TV tv2 = new TV("LGtv", 350000);
 		
 		Customer c = new Customer();
 		c.buy(d1); //상속관계에 있기 때문에 정상출력
