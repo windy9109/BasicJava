@@ -1,7 +1,7 @@
 package g_oop2;
 
 public class SampleChild extends SampleParent {
-	void childMethod() {
+	void childMethod() { 
 		//상속받은 변수와 메서드를 사용할 수 있다.
 		System.out.println(var); //상속받은 변수
 		System.out.println(method(7,13)); //상속받은 메서드

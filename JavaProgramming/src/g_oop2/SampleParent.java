@@ -2,7 +2,7 @@ package g_oop2;
 
 public class SampleParent {
 	/*
-	 * 상속
+	 * 상속 
 	 * - 기존의 클래스를 물려받아 새로운 클래스를 만드는 것이다.
 	 * - class 자식 클래스명 extends 부모클래스명 {}
 	 * - 부모클래스의 생성자와 초기화 블력을 제외한 모든 맴버를 물려받는다.
