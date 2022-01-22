@@ -11,7 +11,7 @@ public class Store {
 		TV tv1 = new TV("삼성 tv", 300000);
 		TV tv2 = new TV("LG tv", 350000);
 		
-		Customer c =new Customer();
+		Customer c = new Customer();
 		c.buy(d1); //상속관계에 있기 때문에 정상출력
 		c.buy(ac1);
 		c.buy(tv1);
@@ -81,7 +81,7 @@ class Customer{
 		money -= p.price;
 		for(int i=0; i<items.length; i++) {
 			if(items[i] == null) {
-				items[i] =p;
+				items[i] = p;
 				break;
 			}
 		}
