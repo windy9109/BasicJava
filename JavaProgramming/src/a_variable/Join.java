@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Join {
 
 	public static void main(String[] args) {
-		//다음과 같은 프로그램을 작성해주세요.
+		//다음과 같은 프로그램을 작성해주세요. 
 		/*
 		 * ====================회원가입====================
 		 * 아이디> admin 
