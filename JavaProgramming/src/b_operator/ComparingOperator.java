@@ -4,7 +4,7 @@ public class ComparingOperator {
 
 	public static void main(String[] args) {
 		/*
-		 * 비교연산자
+		 * 비교연산자 
 		 * <, >, <=, >=, ==, !=
 		 * 문자열비교: equals()
 		 * ※비교연산자는 주소를 비교함.
