@@ -4,7 +4,7 @@ public class LogicalOperator {
 
 	public static void main(String[] args) {
 		/*
-		 * 논리연산자
+		 * 논리연산자 
 		 * &&(AND), ||(OR), !(NOT)
 		 * 피연산자로 boolean만 허용한다.
 		 * 
