@@ -6,7 +6,7 @@ public class SimpleCalculator {
 
 	public static void main(String[] args) {
  
-		//두개의 숫자와 연산자를 입력받아 연산결과를 알려주는 프로그램을 만들어주세요.(계산기 + - * /)
+		//두개의 숫자와 연산자를 입력받아 연산결과를 알려주는 프로그램을 만들어주세요.(계산기 + - * /) 
         
 
 	      
