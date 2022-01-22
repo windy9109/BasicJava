@@ -7,7 +7,7 @@ public class Baseball {
 	public static void main(String[] args) {
 		/*
 		 * 
-		 * 135: 1S 1B 1O
+		 * 135: 1S 1B 1O 
 		 * 379:0S 0B 3O
 		 * 스트라이크/볼/아웃
 		 * 야구게임 만들기 
