@@ -4,6 +4,7 @@ public class Store {
 
 	public static void main(String[] args) {
 		
+		
 		Desktop d1 = new Desktop("삼성 컴퓨터", 100000);
 		Desktop d2 = new Desktop("LG 컴퓨터", 100000);
 		AirCon ac1 = new AirCon("삼성 에어컨", 200000);
