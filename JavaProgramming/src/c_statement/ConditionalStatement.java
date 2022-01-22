@@ -7,7 +7,7 @@ public class ConditionalStatement {
 	public static void main(String[] args) {
 		/*
 		 * 
-		 * 조건문
+		 * 조건문 
 		 * -if문
 		 * -switch문
 		 * 
