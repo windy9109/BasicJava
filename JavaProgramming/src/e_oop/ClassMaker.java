@@ -2,7 +2,7 @@ package e_oop;
 
 public class ClassMaker {
 
-	//전역변수 하나를 선언 및 초기화 해주세요.
+	//전역변수 하나를 선언 및 초기화 해주세요. 
 	
 	int number=0;
 	
