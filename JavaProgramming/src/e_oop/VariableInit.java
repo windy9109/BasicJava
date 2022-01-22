@@ -3,7 +3,7 @@ package e_oop;
 public class VariableInit {
 
 	/*
-	 * 변수 초기화
+	 * 변수 초기화 
 	 */
 	
 	
