@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SelfTest {
 
 	public static void main(String[] args) {
-		// 자가진단 테스트 10개 문항중 해당되는 문항을 출력
+		// 자가진단 테스트 10개 문항중 해당되는 문항을 출력 
 
 		System.out.println("==============================================");
 		System.out.println("           탄수화물 중독? 자가진단 해보기");
