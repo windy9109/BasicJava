@@ -5,7 +5,7 @@ public class UserDefinedDataType {
 	public static void main(String[] args) {
 		
 		/*
-		 * 사용자 정의 데이터 타입
+		 * 사용자 정의 데이터 타입 
 		 * - 데이터의 최종진화 형태이다.(기본형 -> 배열 -> 클래스)
 		 * - 서로 다른 타입의 데이터를 묶어서 사용하는 것이다.
 		 * - 변수와 메서드로 구성할 수 있다.
