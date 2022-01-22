@@ -1,7 +1,7 @@
 package e_oop;
 
 import java.util.Scanner;
-
+ 
 public class ScanUtil {
 	
 	private static Scanner s =new Scanner(System.in);
