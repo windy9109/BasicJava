@@ -2,7 +2,7 @@ package e_oop;
 
 public class Static {
 
-	/*
+	/* 
 	 * - static을 붙이면 프로그램 실행시 메모리에 올라간다.
 	 * - 객체생성을 하지 않아도 사용할수 있다.
 	 * - static을 붙인 변수는 객체간에 변수의 값을 공유한다.
