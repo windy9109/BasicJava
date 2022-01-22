@@ -8,7 +8,7 @@ public class Quiz {
 		
 //		int money =(int)(Math.random()*500)*10;
 //		int[] coin = {500,100, 50, 10};
-//		int[] bin = new int[money];
+//		int[] bin = new int[money]; 
 //		int[] bin2 = new int[money];
 //			System.out.println("거스름돈:"+money);
 		/*
