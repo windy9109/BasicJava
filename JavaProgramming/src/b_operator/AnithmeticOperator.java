@@ -4,7 +4,7 @@ public class AnithmeticOperator {
 
 	public static void main(String[] args) {
 		/*
-		 * 산술 연산자
+		 * 산술 연산자 
 		 * -사칙연산: +, -, *, /, %(나머지)
 		 * -복합연산: +=, -=, *=, /=, %=
 		 * -증감연산: ++, --
