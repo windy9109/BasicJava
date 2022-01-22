@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AirCon {
 
-	//속성: 변할수 있고 조작가능한것 
+	//속성: 변할수 있고 조작가능한것  
 	//메서드: 대상이 하는 동작 행동
 	
 	//버튼하나가 메서드가 됨
