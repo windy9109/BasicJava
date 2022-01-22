@@ -12,7 +12,7 @@ public class Score {
 		
 		
 		for(int i=0; i< students.length; i++) {
-			students[i] = new Student(); //객체생성
+			students[i] = new Student(); //객체생성 
 			students[i].name = studentNames[i]; //배열에 넣기
 			students[i].randomScore(); //점수랜덤 발생
 			students[i].getSum(); //점수합계

@@ -12,7 +12,7 @@ public class Student {
 	double avg;
 	int rank =1;
 	
-//	int stsum= kor + eng + math;
+//	int stsum= kor + eng + math; 
 //	double stavg = Math.round(stsum/3.0*100)/100.0;
 	
 	
