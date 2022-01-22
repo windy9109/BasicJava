@@ -6,7 +6,7 @@ public class RepetitiveStatement {
 
 	public static void main(String[] args) {
 		/*
-		 * 반복문
+		 * 반복문 
 		 * - for문
 		 * - while 문
 		 * - do-while문
