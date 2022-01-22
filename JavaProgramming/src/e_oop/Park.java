@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 public class Park {
-//파일하나에 public이 붙은 클래스는 하나여야함.
+//파일하나에 public이 붙은 클래스는 하나여야함. 
 
 		//기능: 시동, 주행, 주차
 		
