@@ -6,7 +6,7 @@ public class MultiDimensionalArray {
 
 	public static void main(String[] args) {
 		/*
-		 * 다차원배열
+		 * 다차원배열 
 		 * - 배열안에 배열이 저장되어있는 형태이다.
 		 * 
 		*/
