@@ -7,7 +7,7 @@ public class Etc {
 	public static void main(String[] args) {
 		
 		/*
-		 * 비트연산자
+		 * 비트연산자 
 		 * |,&,^,~,<<,>>
 		 * 비트단위로 연산한다.
 		 * 
