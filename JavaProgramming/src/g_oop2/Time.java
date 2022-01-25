@@ -16,7 +16,7 @@ public class Time {
 	//Source > Generate toString()...
 	
 	
-//  내방법	
+//  방법1	
 //	public int getHour() { //getHour 변수값을 불러오기위한 메서드
 //		return hour;
 //		
