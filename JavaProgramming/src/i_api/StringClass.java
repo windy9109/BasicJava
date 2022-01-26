@@ -33,12 +33,12 @@ public class StringClass {
 //		}
 		
 		
-		//문자열뒤집기 -오류
-//		Steing rev = "";
-//		for(int i=length-1; i >= 0; i--) {
-//			rev += str.charAt(i);
-//		}
-//		System.out.println(rev);
+		//문자열뒤집기
+		String rev = "";
+		for(int i=str.length()-1; i >= 0; i--) {
+			rev += str.charAt(i);
+		}
+		System.out.println(rev+"문자열뒤집기");
 		
 		
 		
