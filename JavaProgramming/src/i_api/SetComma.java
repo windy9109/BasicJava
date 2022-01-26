@@ -27,12 +27,9 @@ public class SetComma {
 			
 
 			
-
-			
 		}
 		
 		inNumber = num.length() - (max+1);
-	//	System.out.println(inNumber);
 		for(int i=0; i<num.length(); i++) {
 			System.out.print(num1[i]);
 		if(i==inNumber) {
