@@ -10,7 +10,7 @@ public class Arbeit extends Place {
 	
 	
 	
-	
+	 
 	
 	
 	//이벤트
