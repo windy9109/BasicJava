@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
-public class JDBC2 {
+public class JDBC2 { 
 
 	public static void main(String[] args) {
 		//데이터베이스 접속 정보
