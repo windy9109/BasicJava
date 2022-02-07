@@ -18,7 +18,7 @@ public class JDBC3 {
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		
+		 
 		try {
 			con = DriverManager.getConnection(url, user, password);
 		
