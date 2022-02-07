@@ -17,7 +17,7 @@ public class BoardQuery {
 	
 	//데이터베이스 접속 정보
 	private static String url="jdbc:oracle:thin:@localhost:1521:xe";
-	private static String user = "LSG9";
+	private static String user = "sys as sysdba";
 	private static String password ="java";
 	
 	private static Connection con = null;
@@ -26,17 +26,6 @@ public class BoardQuery {
 	
 
 	
-
-//	int BOARD_NO;
-//	String TITLE;
-//	String CONTENT;
-//	String MEM_ID;
-//	BoardQuery(int BOARD_NO, String TITLE, String CONTENT, String MEM_ID){
-//		this.BOARD_NO = BOARD_NO;
-//		this.TITLE = TITLE;
-//		this.CONTENT = CONTENT;
-//		this.MEM_ID = MEM_ID;
-//	}
 	
 	
 	
@@ -81,8 +70,8 @@ public class BoardQuery {
 	
 	
 	
-	//값 입력
-	 static List<Object> print() {
+	//insert값 입력
+	 static List<Object> printInsert() {
 
 		 	System.out.println("제목을 입력해주세요");
 			//int BOARD_NO = ScanUtil.nextInt();
@@ -100,10 +89,51 @@ public class BoardQuery {
 
 			return param;
 	 }
+	 
+	 
+	 //DELETE 값 입력
+	 static List<Object> printDelete( String sc ) {
+			
+		 	
+			ArrayList<Object> param = new ArrayList<Object>();
+			//param.add(BOARD_NO);	
+			param.add(Integer.valueOf(sc));
+
+			return param;
+	 }
+	 
+	 
+	 
+	 
+	 //UPDATE 값 입력
+	 static List<Object> printUpdate( String sc ) {
+
+		 	System.out.println("수정할 제목을 입력해주세요");
+			//int BOARD_NO = ScanUtil.nextInt();
+			String TITLE = ScanUtil.nextLine();
+			System.out.println("수정할 내용을 입력해주세요");
+			String CONTENT = ScanUtil.nextLine();
+			System.out.println("수성할 작성자명을 입력해주세요");
+			String MEM_ID = ScanUtil.nextLine();
+			
+			ArrayList<Object> param = new ArrayList<Object>();
+			//param.add(BOARD_NO);	
+			param.add(TITLE);
+			param.add(CONTENT);
+			param.add(MEM_ID);
+			param.add(Integer.valueOf(sc));
+
+			return param;
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
 	
-	//데이터 삽입
-	
-	public static int insert(String sql, List<Object> param) {
+	//이벤트 문장
+	public static int Event(String sql, List<Object> param) {
 		int result=0;
 		try {
 			con = DriverManager.getConnection(url, user, password);
@@ -129,8 +159,6 @@ public class BoardQuery {
 	
 	
 	
-	//입력받을 값
-	//System.out.println(sc);
 	
 	
 	
