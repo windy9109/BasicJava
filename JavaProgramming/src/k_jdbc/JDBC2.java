@@ -16,7 +16,7 @@ public class JDBC2 {
 		//호스트이름 대신 ip이름을 적으면 다른컴퓨터에 접속가능
 		String user ="LSG9";
 		String password ="java";
-		
+		 
 		Connection con =null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
