@@ -17,7 +17,7 @@ public class BoardQuery {
 	
 	//데이터베이스 접속 정보
 	private static String url="jdbc:oracle:thin:@localhost:1521:xe";
-	private static String user = "sys as sysdba";
+	private static String user = "LSG9";
 	private static String password ="java";
 	
 	private static Connection con = null;

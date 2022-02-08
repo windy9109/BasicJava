@@ -39,7 +39,7 @@ public class BoardMain {
 				+ " ORDER BY REG_DATE";
 		List<Map<String, Object>> list = BoardQuery.selectList(sql);
 		String[] columntit1 = {"BOARD_NO","TITLE","MEM_ID","REG_DATE"};
-		
+		 
 		
 		System.out.println("                     [목 록]" 
 		+ "\n-----------------------------------------------------");
