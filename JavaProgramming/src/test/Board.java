@@ -2,11 +2,17 @@ package test;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 import e_oop.ScanUtil;
 
 public class Board {
+	
+	
+	public static void main(String[] args) {
+		new Board().start();
+	}
 	
 	ArrayList<HashMap<String, Object>> boardTable = new ArrayList<HashMap<String, Object>>();
 	SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");
@@ -18,12 +24,14 @@ public class Board {
 			System.out.println("=============================");
 			System.out.println("번호\t제목\t작성자\t작성일");
 			for(int i= boardTable.size()-1; i>=0; i--) {
+				System.out.println("-------------------------------");
 				HashMap<String, Object> board = boardTable.get(i);
 				System.out.println(board.get("BOARD_NO")
 						+"\t" + board.get("TITLE")
 						+"\t" + board.get("USER_NAME")
-						+"\t" + board.get("REG_DATE"));
+						+"\t" + format.format(board.get("REG_DATE")));
 			}
+			System.out.println("=============================");
 				
 				System.out.println("1.조회  2.등록  0.종료>");
 				int input = ScanUtil.nextInt();
@@ -53,21 +61,24 @@ public class Board {
 			int max = 0;
 			for(int i=0; i<boardTable.size(); i++) {
 				if(max<(int)boardTable.get(i).get("BOARD_NO")) {
-					max = (int);
+					max = (int)boardTable.get(i).get("BOARD_NO");
 				}
 			}
 			
-			board.put("BOARD_NO", board);
+			board.put("BOARD_NO", max+1);
 			System.out.println("제목>");
 			board.put("TITLE", ScanUtil.nextLine());
 			System.out.println("내용>");
 			board.put("CONTENT", ScanUtil.nextLine());
 			System.out.println("작성자>");
 			board.put("USER_NAME", ScanUtil.nextLine());
-			board.put("REG_DATE", format);
+			board.put("REG_DATE", new Date());
 			boardTable.add(board);
+			System.out.println("게시글이 등록되었습니다.");
 		}
 		
+		
+
 		
 		
 		
@@ -77,7 +88,7 @@ public class Board {
 		
 		//조회
 		private void read() {
-			System.out.println("조회할 게시물 번호>");
+			System.out.print("조회할 게시물 번호>");
 			int boardNo = ScanUtil.nextInt();
 			
 			
@@ -124,12 +135,12 @@ public class Board {
 		}
 		
 		
-	}		
+			
 		//주소를 입력받는것임
 		private void update(HashMap<String, Object> board) {
-			System.out.println("제목>");
+			System.out.print("제목>");
 			board.put("TITLE", ScanUtil.nextLine());
-			System.out.println("내용>");
+			System.out.print("내용>");
 			board.put("CONTENT", ScanUtil.nextLine());
 			
 			System.out.println("게시글이 수정되었습니다.");
@@ -139,7 +150,7 @@ public class Board {
 		//삭제시 사용자에게 한번더 물어보기
 		private void delete(HashMap<String, Object> board) {
 			
-			System.out.println("정말 삭제하시겠습니까?(Y/N)>");
+			System.out.print("정말 삭제하시겠습니까?(Y/N)>");
 			String input = ScanUtil.nextLine();
 			
 			if(input.equals("Y")) {
