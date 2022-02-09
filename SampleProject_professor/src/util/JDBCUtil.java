@@ -1,5 +1,6 @@
 package util;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -47,7 +48,7 @@ public class JDBCUtil {
 			if(rs.next()) {
 				map = new HashMap<String, Object>();
 				for(int i = 1; i <= columnCount; i++) {
-					map.put(metaData.getColumnName(i), rs.getObject(i));
+					map.put(metaData.getColumnName(i), cast(rs.getObject(i)));
 				}
 			}
 		} catch (SQLException e) {
@@ -81,7 +82,7 @@ public class JDBCUtil {
 			if(rs.next()) {
 				map = new HashMap<String, Object>();
 				for(int i = 1; i <= columnCount; i++) {
-					map.put(metaData.getColumnName(i), rs.getObject(i));
+					map.put(metaData.getColumnName(i), cast(rs.getObject(i)));
 				}
 			}
 		} catch (SQLException e) {
@@ -112,7 +113,7 @@ public class JDBCUtil {
 			while(rs.next()) {
 				Map<String, Object> map = new HashMap<String, Object>();
 				for(int i = 1; i <= columnCount; i++) {
-					map.put(metaData.getColumnName(i), rs.getObject(i));
+					map.put(metaData.getColumnName(i), cast(rs.getObject(i)));
 				}
 				list.add(map);
 			}
@@ -147,7 +148,7 @@ public class JDBCUtil {
 			while(rs.next()) {
 				Map<String, Object> map = new HashMap<String, Object>();
 				for(int i = 1; i <= columnCount; i++) {
-					map.put(metaData.getColumnName(i), rs.getObject(i));
+					map.put(metaData.getColumnName(i), cast(rs.getObject(i)));
 				}
 				list.add(map);
 			}
@@ -203,6 +204,21 @@ public class JDBCUtil {
 		}
 		
 		return result;
+	}
+	
+	private static Object cast(Object value) {
+		Object rtnValue = null;
+		
+		if(value.getClass() == BigDecimal.class) {
+			BigDecimal num = (BigDecimal)value;
+			
+			
+			rtnValue = ((BigDecimal)value).doubleValue();
+		}else {
+			rtnValue = value;
+		}
+		
+		return rtnValue;
 	}
 	
 }

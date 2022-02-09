@@ -8,5 +8,7 @@ public interface View {
 	int BOARD_LIST = 3;
 	int BOARD_INSERT = 4;
 	int BOARD_READ = 5;
+	int BOARD_UPDATE = 6;
+	int BOARD_DELETE = 7;
 	
 }

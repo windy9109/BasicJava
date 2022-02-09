@@ -43,8 +43,8 @@ public class Controller {
 			switch(view) {
 			
 			case View.HOME: view = home(); break; 
-			case View.LOGIN: view = MemberService.login(); break;
-			case View.JOIN: view = MemberService.join(); break;
+			case View.LOGIN: view = memberService.login(); break;
+			case View.JOIN: view = memberService.join(); break;
 			case View.BOARD_LIST:  view = boardService.boardList(); break;
 			}
 		}

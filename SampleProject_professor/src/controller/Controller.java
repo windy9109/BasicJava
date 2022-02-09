@@ -33,6 +33,10 @@ public class Controller {
 			case View.LOGIN: view = memberService.login(); break;
 			case View.JOIN: view = memberService.join(); break;
 			case View.BOARD_LIST: view = boardService.boardList(); break;
+			case View.BOARD_READ: view = boardService.boardRead(); break;
+			case View.BOARD_INSERT: view = boardService.boardInsert(); break;
+			case View.BOARD_UPDATE: view = boardService.boardUpdate(); break;
+			case View.BOARD_DELETE: view = boardService.boardDelete(); break;
 			}
 		}
 	}

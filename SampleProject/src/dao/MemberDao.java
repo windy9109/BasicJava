@@ -34,7 +34,7 @@ public class MemberDao {
 	}
 	
 	
-	public List<Map<String, Object>> selectMember(String memId, String password){
+	public Map<String, Object> selectMember(String memId, String password){
 		String sql ="SELECT MEM_ID"
 				+ "		, PASSWORD"
 				+ "		, MEM_NAME"
@@ -45,7 +45,7 @@ public class MemberDao {
 		List<Object> param = new ArrayList<Object>();
 		param.add(memId);
 		param.add(password);
-		return JDBCUtil.selectList(sql, param);
+		return JDBCUtil.selectOne(sql, param);
 	}
 	
 	

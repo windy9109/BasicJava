@@ -27,7 +27,7 @@ public class MemberService {
 	
 	private MemberDao memberDao = MemberDao.getInstance();
 	
-	public static int join() {
+	public int join() {
 		System.out.println("================== 회원가입 ==================");
 		System.out.println("아이디>");
 		String memId = ScanUtil.nextLine();
@@ -56,7 +56,7 @@ public class MemberService {
 
 	}
 
-	public static int login() {
+	public int login() {
 		System.out.println("===================로그인");
 		System.out.println("아이디>");
 		String memId = ScanUtil.nextLine();
