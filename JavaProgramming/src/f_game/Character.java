@@ -26,8 +26,8 @@ public class Character {
 		this.name = name; //이름
 		this.maxHp = hp;   //최대체력
 		this.maxMp = mp;	 //최대마나
-		this.hp = maxHp; 	 //체력
-		this.mp = maxMp;		//마나
+		this.hp = this.maxHp; 	 //체력
+		this.mp = this.maxMp;		//마나
 		this.att = att;	//공격력
 		this.def = def;    //방어력
 		this.level = 1;  //레벨

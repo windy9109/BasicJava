@@ -21,21 +21,6 @@ public class Student {
 
 	
 	
-	
-//	
-//	void print() {
-//		
-//	for(int i=0; i<4; i++) {
-//		System.out.print(kor+"\t");
-//		System.out.print(eng+"\t");
-//		System.out.print(math+"\t");
-//		System.out.print(stsum+"\t");
-//		System.out.print(stavg+"\t");
-//		System.out.print(rank+"\t");
-//		System.out.println();
-//	}
-//		
-//	}
 
 	
 	

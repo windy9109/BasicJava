@@ -44,18 +44,18 @@ public class StringClass {
 		
 		
 		//갈라져서 반환
-//		str = "0123456789";
-//		String sub1 =str.substring(3);
-//		System.out.println(sub1);
+		str = "0123456789";
+		String sub1 =str.substring(3);
+		System.out.println(sub1);
 		
 		
 		
 		//갈라져서 반환
-//		str = "0123456789";
-//		String sub1 =str.substring(3);
-//		System.out.println(sub1);
-//		String sub2 =str.substring(5,8); // 자를때 끝나는 인덱스 전까지만 반환. 따라서 5,6,7만 반환함
-//		System.out.println(sub2);
+		str = "0123456789";
+		String sub2 =str.substring(3);
+		System.out.println(sub1);
+		String sub3 =str.substring(5,8); // 자를때 끝나는 인덱스 전까지만 반환. 따라서 5,6,7만 반환함
+		System.out.println(sub2);
 		
 		
 		

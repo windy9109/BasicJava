@@ -21,7 +21,7 @@ public class BoardMain {
 		//Oracle연동한 게시판만들기
 //		String sql = "INSERT INTO TB_JDBC_BOARD"
 //				+ " VALUES ("
-//				+ "         SELECT NVL(MAX(BOARD_NO),0)+1 FROM TB_JDBC_BOARD"
+//				+ "         (SELECT NVL(MAX(BOARD_NO),0)+1 FROM TB_JDBC_BOARD)"
 //				+ "			, ?, ?, ?"
 //				+ "			SYSDATE"
 //				+ " )";
@@ -70,7 +70,7 @@ public class BoardMain {
 					map = list.get(i);
 					String[] columntit2 = {"BOARD_NO","TITLE","CONTENT","MEM_ID","REG_DATE"};
 					
-					System.out.println("                     [상세페이지]" 
+					System.out.println("                      [상세페이지]" 
 							+ "\n-----------------------------------------------------");
 					for (String key : columntit2) {
 						System.out.print(key + "\t");

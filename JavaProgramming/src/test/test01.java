@@ -27,7 +27,7 @@ public class test01 {
 					+ "	   FROM TB_JDBC_BOARD A"
 					+ "		LEFT OUTER JOIN MEMBER B ON A.MEM_ID= B.MEM_ID"
 					+ "		ORDER BY A.BOARD_NO";
-			List<Map<String, Object>> boardList = JDBCUtil.seletList(sql);
+		//	List<Map<String, Object>> boardList = JDBCUtil.seletList(sql);
 			System.out.println("\n1.조회  2.등록  0.종료");
 			int input = ScanUtil.nextInt();
 			switch(input) {

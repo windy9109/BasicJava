@@ -23,11 +23,11 @@ public class SetComma {
 			num1[i] = num.substring(i,i+1);
 			if(i%3 == 0) {
 					max = i;}
-			
-			
-
-			
+	
 		}
+		
+		
+		
 		
 		inNumber = num.length() - (max+1);
 		for(int i=0; i<num.length(); i++) {

@@ -1,5 +1,9 @@
 package controller;
 
+
+import dao.MemberDao;
+import service.BoardService;
+import service.MemberService;
 import util.ScanUtil;
 import util.View;
 
@@ -13,7 +17,7 @@ public class Controller {
 		 * 발표인원: 발표자1명, ppt 및 시연도우미 1명
 		 * 발표시간: 15분
 		 * 
-		 * Contronller: 화면이동(컨트롤러에서만 서비스통제 - 중앙컨트롤형태)
+		 * Controller: 화면이동(컨트롤러에서만 서비스통제 - 중앙컨트롤형태)
 		 * Service: 화면기능(메소드 집합)
 		 * Dao: 데이터베이스 접속
 		 * 
@@ -28,15 +32,20 @@ public class Controller {
 		
 	}
 
+	
+	
+	private MemberService memberService = MemberService.getInstance();
+	private BoardService boardService = BoardService.getInstance();
+	
 	private void start() {
 		int view = View.HOME;
 		while(true) {
 			switch(view) {
 			
 			case View.HOME: view = home(); break; 
-			case View.LOGIN: break;
-			case View.JOIN: break;
-			case View.BOARD_LIST: break;
+			case View.LOGIN: view = MemberService.login(); break;
+			case View.JOIN: view = MemberService.join(); break;
+			case View.BOARD_LIST:  view = boardService.boardList(); break;
 			}
 		}
 		
@@ -53,13 +62,10 @@ public class Controller {
 			System.out.println("프로그램이 종료되었습니다");
 			System.exit(0);
 		}
-		
-		
+
 		return View.LOGIN;
 	}
 
-	
-	
 	
 	
 	
