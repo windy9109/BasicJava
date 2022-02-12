@@ -28,10 +28,10 @@ public class JDBC {
 		
 		
 		//데이터베이스 접속 정보
-		String url ="jdbc:oracle:thin:@localhost:1521:xe"; 
+		String url ="jdbc:oracle:thin:@192.168.134.3:1521:xe"; 
 		// jdbc:oracle:thinL=> jdbc의 버전을 뜻함, localhost:1521:xe는 오라클 접속자정보를 뜻함(호스트이름,포트,SID)
 		//호스트이름 대신 ip이름을 적으면 다른컴퓨터에 접속가능
-		String user ="LSG9";
+		String user ="SEM";
 		String password ="java";
 		
 		Connection con =null;
